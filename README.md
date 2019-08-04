@@ -27,9 +27,13 @@ bash update.dev.sh (linux - mac)
 migrations.dev.bat (windows)
 update.dev.bat (windows)
 
+# Setup Data for IS4
+https://github.com/skoruba/IdentityServer4.Admin#ef-core--data-access
+
 # start identity server with seed option to populate configuration
 cd MicroStarter.Identity/src/Host
 dotnet run /seed
+
 # start ionic with cordova () 
 cd ionic_4_cli
 ionic cordova run browser -l

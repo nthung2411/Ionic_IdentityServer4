@@ -20,6 +20,10 @@ Set your postgresql username and password in MicroStarter.Identity/src/Host/Star
 # run migrations 
 bash migrations.dev.sh (linux - mac)
 bash update.dev.sh (linux - mac)
+
+migrations.dev.bat (window)
+update.dev.bat (window)
+
 # start identity server with seed option to populate configuration
 cd MicroStarter.Identity/src/Host
 dotnet run /seed

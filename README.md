@@ -14,15 +14,18 @@ cd Ionic_IdentityServer4
 
 # Set your ASPNETCORE_ENVIRONMENT environment to Development
 # Remove this git config
-rm -rf .git 
+rm -rf .git (linux - mac)
+rd /s /q (windows)
+
 # Start Your PostgreSql
 Set your postgresql username and password in MicroStarter.Identity/src/Host/Startup.cs
+
 # run migrations 
 bash migrations.dev.sh (linux - mac)
 bash update.dev.sh (linux - mac)
 
-migrations.dev.bat (window)
-update.dev.bat (window)
+migrations.dev.bat (windows)
+update.dev.bat (windows)
 
 # start identity server with seed option to populate configuration
 cd MicroStarter.Identity/src/Host

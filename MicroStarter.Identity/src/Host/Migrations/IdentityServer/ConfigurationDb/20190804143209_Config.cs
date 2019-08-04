@@ -138,11 +138,11 @@ namespace Host.Migrations.IdentityServer.ConfigurationDb
                 name: "ApiSecrets",
                 columns: table => new
                 {
-                    Expiration = table.Column<DateTime>(nullable: true),
                     Id = table.Column<int>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     Description = table.Column<string>(maxLength: 1000, nullable: true),
                     Value = table.Column<string>(maxLength: 2000, nullable: true),
+                    Expiration = table.Column<DateTime>(nullable: true),
                     Type = table.Column<string>(maxLength: 250, nullable: true),
                     ApiResourceId = table.Column<int>(nullable: false)
                 },
@@ -323,11 +323,11 @@ namespace Host.Migrations.IdentityServer.ConfigurationDb
                 name: "ClientSecrets",
                 columns: table => new
                 {
-                    Expiration = table.Column<DateTime>(nullable: true),
                     Id = table.Column<int>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     Description = table.Column<string>(maxLength: 2000, nullable: true),
                     Value = table.Column<string>(maxLength: 2000, nullable: false),
+                    Expiration = table.Column<DateTime>(nullable: true),
                     Type = table.Column<string>(maxLength: 250, nullable: true),
                     ClientId = table.Column<int>(nullable: false)
                 },

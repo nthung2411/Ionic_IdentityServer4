@@ -15546,3 +15546,9 @@ System.InvalidOperationException: sub claim is missing
 2018-08-20 19:50:00.526 +03:00 [DBG] End userinfo request
 2018-08-20 19:52:48.885 +03:00 [DBG] TaskCanceledException. Exiting.
 2018-08-20 19:52:48.910 +03:00 [DBG] Stopping token cleanup
+2019-08-04 21:35:11.176 +07:00 [DBG] Using Identity.Application as default scheme for authentication
+2019-08-04 21:35:11.210 +07:00 [DBG] Using Identity.External as default scheme for sign-in
+2019-08-04 21:35:11.213 +07:00 [DBG] Using Identity.External as default scheme for sign-out
+2019-08-04 21:35:11.213 +07:00 [DBG] Using Identity.Application as default scheme for challenge
+2019-08-04 21:35:11.216 +07:00 [DBG] Using Identity.Application as default scheme for forbid
+2019-08-04 21:35:11.313 +07:00 [DBG] Starting token cleanup

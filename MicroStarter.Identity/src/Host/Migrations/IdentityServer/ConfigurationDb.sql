@@ -86,10 +86,10 @@ CREATE TABLE "ApiScopes" (
 );
 
 CREATE TABLE "ApiSecrets" (
-    "Expiration" timestamp without time zone NULL,
     "Id" serial NOT NULL,
     "Description" varchar(1000) NULL,
     "Value" varchar(2000) NULL,
+    "Expiration" timestamp without time zone NULL,
     "Type" varchar(250) NULL,
     "ApiResourceId" integer NOT NULL,
     CONSTRAINT "PK_ApiSecrets" PRIMARY KEY ("Id"),
@@ -163,10 +163,10 @@ CREATE TABLE "ClientScopes" (
 );
 
 CREATE TABLE "ClientSecrets" (
-    "Expiration" timestamp without time zone NULL,
     "Id" serial NOT NULL,
     "Description" varchar(2000) NULL,
     "Value" varchar(2000) NOT NULL,
+    "Expiration" timestamp without time zone NULL,
     "Type" varchar(250) NULL,
     "ClientId" integer NOT NULL,
     CONSTRAINT "PK_ClientSecrets" PRIMARY KEY ("Id"),
@@ -226,5 +226,5 @@ CREATE INDEX "IX_IdentityClaims_IdentityResourceId" ON "IdentityClaims" ("Identi
 CREATE UNIQUE INDEX "IX_IdentityResources_Name" ON "IdentityResources" ("Name");
 
 INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
-VALUES ('20180819124023_Config', '2.1.1-rtm-30846');
+VALUES ('20190804143209_Config', '2.1.11-servicing-32099');
 

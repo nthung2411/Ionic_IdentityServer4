@@ -13,21 +13,21 @@ CREATE TABLE "AspNetRoles" (
 );
 
 CREATE TABLE "AspNetUsers" (
-    "AccessFailedCount" integer NOT NULL,
-    "EmailConfirmed" boolean NOT NULL,
-    "LockoutEnabled" boolean NOT NULL,
-    "LockoutEnd" timestamp with time zone NULL,
-    "PhoneNumberConfirmed" boolean NOT NULL,
-    "TwoFactorEnabled" boolean NOT NULL,
     "Id" text NOT NULL,
     "UserName" varchar(256) NULL,
     "NormalizedUserName" varchar(256) NULL,
     "Email" varchar(256) NULL,
     "NormalizedEmail" varchar(256) NULL,
+    "EmailConfirmed" boolean NOT NULL,
     "PasswordHash" text NULL,
     "SecurityStamp" text NULL,
     "ConcurrencyStamp" text NULL,
     "PhoneNumber" text NULL,
+    "PhoneNumberConfirmed" boolean NOT NULL,
+    "TwoFactorEnabled" boolean NOT NULL,
+    "LockoutEnd" timestamp with time zone NULL,
+    "LockoutEnabled" boolean NOT NULL,
+    "AccessFailedCount" integer NOT NULL,
     "FirstName" text NULL,
     "LastName" text NULL,
     "IsSoftDeleted" boolean NOT NULL,
@@ -106,5 +106,5 @@ CREATE INDEX "EmailIndex" ON "AspNetUsers" ("NormalizedEmail");
 CREATE UNIQUE INDEX "UserNameIndex" ON "AspNetUsers" ("NormalizedUserName");
 
 INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
-VALUES ('20180819124033_Users', '2.1.1-rtm-30846');
+VALUES ('20190804143215_Users', '2.1.11-servicing-32099');
 

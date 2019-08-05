@@ -1,6 +1,6 @@
 export const authConfig = {
-  //stsServer: 'http://localhost:5000',
-  stsServer: 'http://192.168.1.195:5000',
+  stsServer: 'http://localhost:5000',
+  // stsServer: 'http://192.168.1.195:5000',
   redirect_url: 'http://localhost:8000',
   client_id: 'IoClient_Id',
   response_type: 'id_token token',

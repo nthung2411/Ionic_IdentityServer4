@@ -15552,3 +15552,298 @@ System.InvalidOperationException: sub claim is missing
 2019-08-04 21:35:11.213 +07:00 [DBG] Using Identity.Application as default scheme for challenge
 2019-08-04 21:35:11.216 +07:00 [DBG] Using Identity.Application as default scheme for forbid
 2019-08-04 21:35:11.313 +07:00 [DBG] Starting token cleanup
+2019-08-04 21:51:08.594 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en","de","fr"]'.
+2019-08-04 21:51:08.681 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en","de","fr"]'.
+2019-08-04 21:51:08.773 +07:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-08-04 21:51:08.804 +07:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-08-04 21:51:08.874 +07:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-08-04 21:51:08.914 +07:00 [DBG] Rendering check session result
+2019-08-04 21:51:28.738 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en","de","fr"]'.
+2019-08-04 21:51:28.741 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en","de","fr"]'.
+2019-08-04 21:51:28.744 +07:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-08-04 21:51:28.764 +07:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-08-04 21:51:28.765 +07:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-08-04 21:51:28.771 +07:00 [DBG] Start authorize request
+2019-08-04 21:51:28.780 +07:00 [DBG] No user present in authorize request
+2019-08-04 21:51:28.791 +07:00 [DBG] Start authorize request protocol validation
+2019-08-04 21:51:29.470 +07:00 [DBG] IoClient_Id found in database: true
+2019-08-04 21:51:29.553 +07:00 [DBG] Found ["openid","profile","email"] identity scopes in database
+2019-08-04 21:51:29.632 +07:00 [DBG] Found [] API scopes in database
+2019-08-04 21:51:29.646 +07:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-08-04 21:51:29.662 +07:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "IoClient_Id",
+  "ClientName": "IoClient",
+  "RedirectUri": "http://localhost:8000",
+  "AllowedRedirectUris": [
+    "http://localhost:8000/silent-renew.html",
+    "http://localhost:8000"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "id_token token",
+  "ResponseMode": "fragment",
+  "GrantType": "implicit",
+  "RequestedScopes": "openid profile email",
+  "State": "15649302887140.02116504821834786",
+  "Nonce": "N0.70173083254925571564930288714",
+  "Raw": {
+    "client_id": "IoClient_Id",
+    "redirect_uri": "http://localhost:8000",
+    "response_type": "id_token token",
+    "scope": "openid profile email",
+    "nonce": "N0.70173083254925571564930288714",
+    "state": "15649302887140.02116504821834786"
+  }
+}
+2019-08-04 21:51:29.671 +07:00 [INF] Showing login: User is not authenticated
+2019-08-04 21:51:29.683 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en","de","fr"]'.
+2019-08-04 21:51:29.683 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en","de","fr"]'.
+2019-08-04 21:51:29.836 +07:00 [DBG] Start authorize request protocol validation
+2019-08-04 21:51:29.837 +07:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-08-04 21:51:30.012 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en","de","fr"]'.
+2019-08-04 21:51:30.013 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en","de","fr"]'.
+2019-08-04 21:51:30.018 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en","de","fr"]'.
+2019-08-04 21:51:30.018 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en","de","fr"]'.
+2019-08-04 21:51:30.021 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en","de","fr"]'.
+2019-08-04 21:51:30.022 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en","de","fr"]'.
+2019-08-04 21:51:30.022 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en","de","fr"]'.
+2019-08-04 21:51:30.022 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en","de","fr"]'.
+2019-08-04 21:51:30.025 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en","de","fr"]'.
+2019-08-04 21:51:30.026 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en","de","fr"]'.
+2019-08-04 21:51:30.098 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en","de","fr"]'.
+2019-08-04 21:51:30.101 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en","de","fr"]'.
+2019-08-04 21:52:26.522 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en","de","fr"]'.
+2019-08-04 21:52:26.524 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en","de","fr"]'.
+2019-08-04 21:52:47.855 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en","de","fr"]'.
+2019-08-04 21:52:47.856 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en","de","fr"]'.
+2019-08-04 21:52:48.408 +07:00 [DBG] Augmenting SignInContext
+2019-08-04 21:52:48.411 +07:00 [DBG] Adding idp claim with value: local
+2019-08-04 21:52:48.412 +07:00 [DBG] Adding amr claim with value: pwd
+2019-08-04 21:52:48.413 +07:00 [DBG] Adding auth_time claim with value: 1564930368
+2019-08-04 21:52:48.424 +07:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-08-04 21:52:48.425 +07:00 [INF] User created a new account with password.
+2019-08-04 21:52:48.452 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en","de","fr"]'.
+2019-08-04 21:52:48.453 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en","de","fr"]'.
+2019-08-04 21:52:48.460 +07:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-08-04 21:52:48.464 +07:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-08-04 21:52:48.465 +07:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-08-04 21:52:48.477 +07:00 [DBG] Start authorize callback request
+2019-08-04 21:52:48.484 +07:00 [DBG] User in authorize request: 98ac2302-5805-4d2f-b374-4129c17715ce
+2019-08-04 21:52:48.485 +07:00 [DBG] Start authorize request protocol validation
+2019-08-04 21:52:48.486 +07:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-08-04 21:52:48.487 +07:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "IoClient_Id",
+  "ClientName": "IoClient",
+  "RedirectUri": "http://localhost:8000",
+  "AllowedRedirectUris": [
+    "http://localhost:8000/silent-renew.html",
+    "http://localhost:8000"
+  ],
+  "SubjectId": "98ac2302-5805-4d2f-b374-4129c17715ce",
+  "ResponseType": "id_token token",
+  "ResponseMode": "fragment",
+  "GrantType": "implicit",
+  "RequestedScopes": "openid profile email",
+  "State": "15649302887140.02116504821834786",
+  "Nonce": "N0.70173083254925571564930288714",
+  "SessionId": "c6cfdab2a905112c276d0c28f305f042",
+  "Raw": {
+    "client_id": "IoClient_Id",
+    "redirect_uri": "http://localhost:8000",
+    "response_type": "id_token token",
+    "scope": "openid profile email",
+    "nonce": "N0.70173083254925571564930288714",
+    "state": "15649302887140.02116504821834786"
+  }
+}
+2019-08-04 21:52:48.528 +07:00 [DBG] Client is configured to not require consent, no consent is required
+2019-08-04 21:52:48.536 +07:00 [DBG] Creating Implicit Flow response.
+2019-08-04 21:52:48.551 +07:00 [DBG] Getting claims for access token for client: IoClient_Id
+2019-08-04 21:52:48.552 +07:00 [DBG] Getting claims for access token for subject: 98ac2302-5805-4d2f-b374-4129c17715ce
+2019-08-04 21:52:48.603 +07:00 [DBG] T6DMpMTx8j/JkVRct6FPX1idTlwQpi3Cch0V2haTxZE= not found in database
+2019-08-04 21:52:48.645 +07:00 [DBG] Getting claims for identity token for subject: 98ac2302-5805-4d2f-b374-4129c17715ce and client: IoClient_Id
+2019-08-04 21:52:48.651 +07:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-08-04 21:52:48.727 +07:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "IoClient_Id",
+  "ClientName": "IoClient",
+  "RedirectUri": "http://localhost:8000",
+  "Endpoint": "Authorize",
+  "SubjectId": "98ac2302-5805-4d2f-b374-4129c17715ce",
+  "Scopes": "openid profile email",
+  "GrantType": "implicit",
+  "Tokens": [
+    {
+      "TokenType": "id_token",
+      "TokenValue": "****EvhA"
+    },
+    {
+      "TokenType": "access_token",
+      "TokenValue": "****136c"
+    }
+  ],
+  "ActivityId": "0HLOOTCNINOS4:00000004",
+  "TimeStamp": "2019-08-04T14:52:48Z",
+  "ProcessId": 936,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2019-08-04 21:52:48.732 +07:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "98ac2302-5805-4d2f-b374-4129c17715ce",
+  "ClientId": "IoClient_Id",
+  "RedirectUri": "http://localhost:8000",
+  "State": "15649302887140.02116504821834786",
+  "Scope": "openid profile email"
+}
+2019-08-04 21:52:48.748 +07:00 [DBG] Augmenting SignInContext
+2019-08-04 21:52:48.749 +07:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-08-04 21:52:49.923 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en","de","fr"]'.
+2019-08-04 21:52:49.926 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en","de","fr"]'.
+2019-08-04 21:52:49.934 +07:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: http://localhost:8000
+2019-08-04 21:52:49.957 +07:00 [DBG] Origin http://localhost:8000 is allowed: true
+2019-08-04 21:52:49.959 +07:00 [DBG] CorsPolicyService allowed origin: http://localhost:8000
+2019-08-04 21:52:49.960 +07:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-08-04 21:52:49.965 +07:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-08-04 21:52:49.966 +07:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-08-04 21:52:49.970 +07:00 [DBG] Start key discovery request
+2019-08-04 21:52:50.010 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en","de","fr"]'.
+2019-08-04 21:52:50.011 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en","de","fr"]'.
+2019-08-04 21:52:50.014 +07:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:8000
+2019-08-04 21:52:50.015 +07:00 [DBG] CorsPolicyService allowed origin: http://localhost:8000
+2019-08-04 21:52:50.034 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en","de","fr"]'.
+2019-08-04 21:52:50.035 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en","de","fr"]'.
+2019-08-04 21:52:50.041 +07:00 [DBG] CORS request made for path: /connect/userinfo from origin: http://localhost:8000
+2019-08-04 21:52:50.042 +07:00 [DBG] CorsPolicyService allowed origin: http://localhost:8000
+2019-08-04 21:52:50.042 +07:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-08-04 21:52:50.052 +07:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-08-04 21:52:50.055 +07:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-08-04 21:52:50.064 +07:00 [DBG] Start userinfo request
+2019-08-04 21:52:50.069 +07:00 [DBG] Bearer token found in header
+2019-08-04 21:52:50.097 +07:00 [DBG] T6DMpMTx8j/JkVRct6FPX1idTlwQpi3Cch0V2haTxZE= found in database: true
+2019-08-04 21:52:50.115 +07:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-08-04 21:52:50.121 +07:00 [DBG] Token validation success
+{
+  "ValidateLifetime": true,
+  "AccessTokenType": "Reference",
+  "ExpectedScope": "openid",
+  "TokenHandle": "bfba5f345fcc5c912164d2187288a6bd2ca7d2a92224a126acfd22c6f5fe136c",
+  "Claims": {
+    "iss": "http://localhost:5000",
+    "nbf": 1564930368,
+    "exp": 1564933968,
+    "aud": "http://localhost:5000/resources",
+    "client_id": "IoClient_Id",
+    "scope": [
+      "openid",
+      "profile",
+      "email"
+    ],
+    "sub": "98ac2302-5805-4d2f-b374-4129c17715ce",
+    "auth_time": 1564930368,
+    "idp": "local",
+    "amr": "pwd"
+  }
+}
+2019-08-04 21:52:50.135 +07:00 [DBG] Creating userinfo response
+2019-08-04 21:52:50.139 +07:00 [DBG] Scopes in access token: openid profile email
+2019-08-04 21:52:50.142 +07:00 [DBG] Scopes in access token: openid profile email
+2019-08-04 21:52:50.144 +07:00 [DBG] Requested claim types: sub updated_at locale zoneinfo birthdate gender website picture family_name name profile preferred_username nickname middle_name given_name email email_verified
+2019-08-04 21:52:50.146 +07:00 [DBG] Scopes in access token: openid profile email
+2019-08-04 21:52:50.150 +07:00 [INF] Profile service returned to the following claim types: sub preferred_username name email email_verified
+2019-08-04 21:52:50.151 +07:00 [DBG] End userinfo request
+2019-08-04 21:57:48.343 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en","de","fr"]'.
+2019-08-04 21:57:48.344 +07:00 [WRN] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en","de","fr"]'.
+2019-08-04 21:57:48.346 +07:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-08-04 21:57:48.350 +07:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-08-04 21:57:48.352 +07:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-08-04 21:57:48.355 +07:00 [DBG] Start authorize request
+2019-08-04 21:57:48.359 +07:00 [DBG] User in authorize request: 98ac2302-5805-4d2f-b374-4129c17715ce
+2019-08-04 21:57:48.360 +07:00 [DBG] Start authorize request protocol validation
+2019-08-04 21:57:48.361 +07:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-08-04 21:57:48.364 +07:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "IoClient_Id",
+  "ClientName": "IoClient",
+  "RedirectUri": "http://localhost:8000/silent-renew.html",
+  "AllowedRedirectUris": [
+    "http://localhost:8000/silent-renew.html",
+    "http://localhost:8000"
+  ],
+  "SubjectId": "98ac2302-5805-4d2f-b374-4129c17715ce",
+  "ResponseType": "id_token token",
+  "ResponseMode": "fragment",
+  "GrantType": "implicit",
+  "RequestedScopes": "openid profile email",
+  "State": "15649306683150.4236575191520846",
+  "Nonce": "N0.82570589179779291564930668315",
+  "PromptMode": "none",
+  "SessionId": "c6cfdab2a905112c276d0c28f305f042",
+  "Raw": {
+    "client_id": "IoClient_Id",
+    "redirect_uri": "http://localhost:8000/silent-renew.html",
+    "response_type": "id_token token",
+    "scope": "openid profile email",
+    "nonce": "N0.82570589179779291564930668315",
+    "state": "15649306683150.4236575191520846",
+    "prompt": "none"
+  }
+}
+2019-08-04 21:57:48.370 +07:00 [DBG] Client is configured to not require consent, no consent is required
+2019-08-04 21:57:48.371 +07:00 [DBG] Creating Implicit Flow response.
+2019-08-04 21:57:48.372 +07:00 [DBG] Getting claims for access token for client: IoClient_Id
+2019-08-04 21:57:48.372 +07:00 [DBG] Getting claims for access token for subject: 98ac2302-5805-4d2f-b374-4129c17715ce
+2019-08-04 21:57:48.383 +07:00 [DBG] 40WU0X8z+BgU/AUiH2VNFsxiz/TCMDqyL3B1jn7vFKw= not found in database
+2019-08-04 21:57:48.385 +07:00 [DBG] Getting claims for identity token for subject: 98ac2302-5805-4d2f-b374-4129c17715ce and client: IoClient_Id
+2019-08-04 21:57:48.386 +07:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-08-04 21:57:48.393 +07:00 [INF] {
+  "Name": "Token Issued Success",
+  "Category": "Token",
+  "EventType": "Success",
+  "Id": 2000,
+  "ClientId": "IoClient_Id",
+  "ClientName": "IoClient",
+  "RedirectUri": "http://localhost:8000/silent-renew.html",
+  "Endpoint": "Authorize",
+  "SubjectId": "98ac2302-5805-4d2f-b374-4129c17715ce",
+  "Scopes": "openid profile email",
+  "GrantType": "implicit",
+  "Tokens": [
+    {
+      "TokenType": "id_token",
+      "TokenValue": "****iJJg"
+    },
+    {
+      "TokenType": "access_token",
+      "TokenValue": "****6977"
+    }
+  ],
+  "ActivityId": "0HLOOTCNINOS8:00000001",
+  "TimeStamp": "2019-08-04T14:57:48Z",
+  "ProcessId": 936,
+  "LocalIpAddress": "::1:5000",
+  "RemoteIpAddress": "::1"
+}
+2019-08-04 21:57:48.394 +07:00 [INF] Authorize endpoint response
+{
+  "SubjectId": "98ac2302-5805-4d2f-b374-4129c17715ce",
+  "ClientId": "IoClient_Id",
+  "RedirectUri": "http://localhost:8000/silent-renew.html",
+  "State": "15649306683150.4236575191520846",
+  "Scope": "openid profile email"
+}
+2019-08-04 22:35:11.369 +07:00 [INF] Clearing 0 tokens
+2019-08-04 23:35:11.399 +07:00 [INF] Clearing 2 tokens
+2019-08-05 00:35:11.453 +07:00 [INF] Clearing 0 tokens
+2019-08-05 01:35:11.499 +07:00 [INF] Clearing 0 tokens
+2019-08-05 02:35:11.542 +07:00 [INF] Clearing 0 tokens
+2019-08-05 03:35:11.585 +07:00 [INF] Clearing 0 tokens
+2019-08-05 04:35:11.617 +07:00 [INF] Clearing 0 tokens
+2019-08-05 05:35:11.655 +07:00 [INF] Clearing 0 tokens
+2019-08-05 06:35:11.724 +07:00 [INF] Clearing 0 tokens
+2019-08-05 07:16:38.186 +07:00 [DBG] TaskCanceledException. Exiting.
+2019-08-05 07:16:38.197 +07:00 [DBG] Stopping token cleanup
